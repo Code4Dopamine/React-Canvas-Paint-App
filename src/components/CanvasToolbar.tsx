@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const CanvasToolbar = () => {
   const test = "hover:border-2 border-black focus:border-2 border-black";

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import "./App.css";
-import CanvasLayout from "./components/CanvasLayout";
+// import CanvasLayout from "./components/CanvasLayout";
 import CanvasPaintApp from "./components/CanvasPaintApp";
 import CanvasToolbar from "./components/CanvasToolbar";
-import MyComponent from "./components/MyComponent";
+// import MyComponent from "./components/MyComponent";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -22,6 +22,8 @@ function App() {
       setWindowWidth(window.innerWidth);
     };
 
+    console.log(canvasHeight, canvasWidth)
+
     // Add event listener to update dimensions on window resize
     window.addEventListener("resize", updateWindowDimensions);
 
@@ -31,9 +33,9 @@ function App() {
     };
   }, []);
 
-  const handleClick = (toolName: any) => {
-    return toolName;
-  };
+  // const handleClick = (toolName: any) => {
+  //   return toolName;
+  // };
 
   const handleCanvasSizeChange = (newWidth: number, newHeight: number) => {
     setCanvasWidth(newWidth);
