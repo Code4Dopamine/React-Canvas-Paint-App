@@ -53,24 +53,10 @@ function App() {
             Height: {windowHeight}, Width: {windowWidth}
           </p>
         </header>
-        {/* <main className="flex gap-5 ">
-          <div>
-            <h1 className="main--toolbar bg-white text-black h-[400px] rounded-xl">
-              Left-Sidebar
-            </h1>
-          </div>
-          <div>
-            <h1 className="bg-white text-black h-[400px] w-11/12">Canvas</h1>
-          </div>
-        </main> */}
-        {/* <CanvasLayout /> */}
         <div className="flex w-screen gap-2 justify-center items-center flex-1">
           <CanvasToolbar />
           <CanvasPaintApp width={windowHeight - 250} height={400} onChange={handleCanvasSizeChange}/>
         </div>
-        {/* <LeftSideBar /> */}
-        {/* <Canvas /> */}
-        {/* <MyComponent /> */}
       </div>
     </>
   );

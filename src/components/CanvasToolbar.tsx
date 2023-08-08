@@ -1,50 +1,68 @@
 // import React from "react";
 
+import CanvasTool from "./CanvasTool";
+
 const CanvasToolbar = () => {
   const test = "hover:border-2 border-black focus:border-2 border-black";
+
+  /*
+      <li className="option active tool" id="brush">
+      <span className="tool-choice">
+        <i className="fa-solid fa-brush fa-sm"></i> Brush
+      </span>
+    </li>
+    <li className="option tool" id="line">
+      <span className="tool-choice">
+        <i className="fa-solid fa-ruler fa-sm"></i> Line
+      </span>
+    </li>
+
+    <li className="option tool" id="eraser">
+      <span className="tool-choice">
+        <i className="fa-solid fa-eraser fa-sm"></i> Eraser
+      </span>
+    </li>
+
+    <li>
+      <span className="label">
+        <i className="fa-solid fa-eraser fa-sm"></i> Eraser
+      </span>
+    </li>
+
+    <li className="option tool" id="rectangle">
+      <span className="tool-choice">▭ Rectangle</span>
+    </li>
+
+    <li className="option tool" id="circle">
+      <span className="tool-choice">◯ Circle</span>
+    </li>
+
+    <li className="option tool" id="triangle">
+      <span className="tool-choice">△ Triangle</span>
+    </li>
+   */
+
+{/* Color Picker */}
+{/* <li>
+  <input type="color" id="color-picker" value="#FFFFFF" />
+</li> */}
 
   return (
     <div className="flex flex-col justify-center w-[200px] bg-white p-5 rounded-xl">
       <ul className="options flex flex-col gap-1 justify-around">
-        <li className="option active tool" id="brush">
-          <span className="tool-choice">
-            <i className="fa-solid fa-brush fa-sm"></i> Brush
-          </span>
-        </li>
+        
+        <label htmlFor="" className="text-center">Tools</label>
+        <hr></hr>
 
-        <li className="option tool" id="line">
-          <span className="tool-choice">
-            <i className="fa-solid fa-ruler fa-sm"></i> Line
-          </span>
-        </li>
+        <CanvasTool icon="fa-solid fa-brush fa-sm" label="Brush" />
+        <CanvasTool icon="fa-solid fa-ruler fa-sm" label="Line"/>
+        <CanvasTool icon="fa-solid fa-eraser fa-sm" label="Eraser" />
+        <CanvasTool icon="▭" label="Rectangle" />
+        <CanvasTool icon="◯" label="Circle" />
+        <CanvasTool icon="△" label="Triangle" />
+        {/* <button className="bg-rose-400 hover:bg-rose-800">Test</button> */}
 
-        <li className="option tool" id="eraser">
-          <span className="tool-choice">
-            <i className="fa-solid fa-eraser fa-sm"></i> Eraser
-          </span>
-        </li>
-        <li>
-          <span className="label">
-            <i className="fa-solid fa-eraser fa-sm"></i> Eraser
-          </span>
-        </li>
 
-        <li className="option tool" id="rectangle">
-          <span className="tool-choice">▭ Rectangle</span>
-        </li>
-
-        <li className="option tool" id="circle">
-          <span className="tool-choice">◯ Circle</span>
-        </li>
-
-        <li className="option tool" id="triangle">
-          <span className="tool-choice">△ Triangle</span>
-        </li>
-
-        {/* Color Picker */}
-        {/* <li>
-          <input type="color" id="color-picker" value="#FFFFFF" />
-        </li> */}
       </ul>
 
       <div>
